@@ -19,7 +19,7 @@ class Button extends Component<ButtonProps> {
         } else if (this.props.size === 'medium') {
             sizeClass = 'px-4 py-2 text-base';
         } else if (this.props.size === 'large') {
-            sizeClass = 'px-5 py-3 text-lg';
+            sizeClass = 'px-4 xl:px-5 py-2 xl:py-3 text-sm xl:text-base';
         }
 
         let styleClass = '';
