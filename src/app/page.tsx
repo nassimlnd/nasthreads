@@ -11,7 +11,7 @@ export default function HomePage() {
     return (
         <main
             className="flex h-screen">
-            <div className={'w-full xl:w-2/3 px-16 py-10 text-center'}>
+            <div className={'w-full xl:w-2/3 px-8 xl:px-16 py-10 text-center'}>
                 <div className={'flex flex-col space-y-2.5 xl:flex-row justify-between items-center'}>
                     <Logo/>
                     <p className={'text-sm xl:text-base'}>Vous n'avez pas de compte ? <Link href={'/register'}><span className={'text-primary-medium'}>Rejoignez-nous !</span></Link></p>
