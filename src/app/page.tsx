@@ -1,37 +1,60 @@
+import Logo from "~/components/Logo";
 import Link from "next/link";
+import Button from "~/components/buttons/Button";
+import GoogleIcon from "~/components/icons/GoogleIcon";
+import FacebookIcon from "~/components/icons/FacebookIcon";
+import Image from "next/image";
+import Input from "~/components/inputs/Input";
+import Eye from "~/components/icons/Eye";
 
 export default function HomePage() {
-  return (
-    <main className="flex min-h-screen flex-col items-center justify-center bg-gradient-to-b from-[#2e026d] to-[#15162c] text-white">
-      <div className="container flex flex-col items-center justify-center gap-12 px-4 py-16 ">
-        <h1 className="text-5xl font-extrabold tracking-tight text-white sm:text-[5rem]">
-          Create <span className="text-[hsl(280,100%,70%)]">T3</span> App
-        </h1>
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2 md:gap-8">
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/usage/first-steps"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">First Steps →</h3>
-            <div className="text-lg">
-              Just the basics - Everything you need to know to set up your
-              database and authentication.
+    return (
+        <main
+            className="flex h-screen">
+            <div className={'w-2/3 px-16 py-10 text-center'}>
+                <div className={'flex justify-between items-center'}>
+                    <Logo/>
+                    <p>Vous n'avez pas de compte ? <Link href={'/register'}><span className={'text-primary-medium'}>Rejoignez-nous !</span></Link>
+                    </p>
+                </div>
+                <div className={'mt-36'}>
+                    <h4 className={'text-4xl font-extrabold'}>Welcome back !</h4>
+                    <p className={'text-base text-slate-600 dark:text-slate-300'}>Connectez-vous à votre compte</p>
+
+                    <div className={'flex space-x-2 justify-center mt-12'}>
+                        <Button size={'large'} style={'secondary'} type={'button'}>
+                            <GoogleIcon/>
+                            Se connecter avec Google
+                        </Button>
+                        <Button size={'large'} style={'secondary'} type={'button'}>
+                            <FacebookIcon/>
+                            Se connecter avec Facebook
+                        </Button>
+                    </div>
+                </div>
+                <p className={'mt-12'}>Ou continuer avec</p>
+                <form>
+                    <div className={'space-y-6 mt-12 w-fit mx-auto'}>
+                        <Input style={'primary'} type={'email'} placeholder={'Adresse e-mail'} size={'large'}
+                               className={'w-[450px]'}/>
+                        <Input style={'primary'} type={'password'} placeholder={'Mot de passe'} size={'large'}
+                               className={'w-[450px]'} icon={<Eye className={'fill-slate-500'}/>}/>
+                    </div>
+                    <div className={'flex justify-between w-[450px] mx-auto mt-4'}>
+                        <div className={'flex items-center space-x-2'}>
+                            <input type={'checkbox'} className={'w-4 h-4 rounded-sm bg-slate-300 dark:bg-slate-600'}/>
+                            <p className={'text-slate-600 dark:text-slate-300'}>Se souvenir de moi</p>
+                        </div>
+                        <Link href={'/forgot-password'}><span
+                            className={'text-danger-medium'}>Mot de passe oublié ?</span></Link>
+                    </div>
+                    <Button type={'submit'} style={'primary'} size={'large'} className={'mx-auto mt-14'}>
+                        Se connecter
+                    </Button>
+                </form>
             </div>
-          </Link>
-          <Link
-            className="flex max-w-xs flex-col gap-4 rounded-xl bg-white/10 p-4 text-white hover:bg-white/20"
-            href="https://create.t3.gg/en/introduction"
-            target="_blank"
-          >
-            <h3 className="text-2xl font-bold">Documentation →</h3>
-            <div className="text-lg">
-              Learn more about Create T3 App, the libraries it uses, and how to
-              deploy it.
-            </div>
-          </Link>
-        </div>
-      </div>
-    </main>
-  );
+            <Image src={'/assets/images/image_login.png'} alt={'Login image'} width={600} height={600}
+                   className={'w-1/3 dark:opacity-70'}/>
+        </main>
+    );
 }
