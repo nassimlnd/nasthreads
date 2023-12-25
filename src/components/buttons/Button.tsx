@@ -3,7 +3,7 @@
 import React, {Component} from 'react';
 
 type ButtonProps = {
-    type: string,
+    type: 'button' | 'submit' | 'reset' | undefined
     style: string,
     size: string,
     children: React.ReactNode,
