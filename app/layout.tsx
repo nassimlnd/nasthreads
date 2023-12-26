@@ -11,7 +11,7 @@ const lexend: NextFontWithVariable = Lexend({
 export const metadata = {
     title: "NasThreads",
     description: "Brand new social network made for the people.",
-    icons: [{rel: "icon", url: "/favicon.ico"}],
+    icons: [{rel: "icon", url: "@/favicon.ico"}],
 };
 
 export default function RootLayout({

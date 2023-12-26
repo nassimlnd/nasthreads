@@ -1,17 +1,16 @@
-import Logo from "~/components/Logo";
+import Logo from "@/components/Logo";
 import Link from "next/link";
-import Button from "~/components/buttons/Button";
-import GoogleIcon from "~/components/icons/GoogleIcon";
-import FacebookIcon from "~/components/icons/FacebookIcon";
+import GoogleIcon from "@/components/icons/GoogleIcon";
+import FacebookIcon from "@/components/icons/FacebookIcon";
 import Image from "next/image";
-import Input from "~/components/inputs/Input";
-import Eye from "~/components/icons/Eye";
+import {Button} from "@/components/ui/button";
+import {Input} from "@/components/ui/input";
 
 export default function HomePage() {
     return (
         <main
             className="flex h-screen">
-            <div className={'w-full xl:w-2/3 px-8 xl:px-16 py-10 text-center'}>
+            <div className={'w-full xl:w-2/3 px-8 xl:px-16 py-6 xl:py-10 text-center'}>
                 <div className={'flex flex-col space-y-2.5 xl:flex-row justify-between items-center'}>
                     <Logo/>
                     <p className={'text-sm xl:text-base'}>Vous n'avez pas de compte ? <Link href={'/register'}><span className={'text-primary-medium'}>Rejoignez-nous !</span></Link></p>
@@ -21,11 +20,11 @@ export default function HomePage() {
                     <p className={'text-sm xl:text-base text-slate-600 dark:text-slate-300'}>Connectez-vous à votre compte</p>
 
                     <div className={'flex space-x-2 justify-center mt-12'}>
-                        <Button size={'large'} style={'secondary'} type={'button'}>
+                        <Button type={'button'}>
                             <GoogleIcon/>
                             Se connecter avec Google
                         </Button>
-                        <Button size={'large'} style={'secondary'} type={'button'}>
+                        <Button type={'button'}>
                             <FacebookIcon/>
                             Se connecter avec Facebook
                         </Button>
@@ -34,10 +33,10 @@ export default function HomePage() {
                 <p className={'mt-10 xl:mt-12'}>Ou continuer avec</p>
                 <form>
                     <div className={'space-y-6 mt-10 xl:mt-12 w-fit mx-auto'}>
-                        <Input style={'primary'} type={'email'} placeholder={'Adresse e-mail'} size={'large'}
+                        <Input type={'email'} placeholder={'Adresse e-mail'}
                                className={'min-w-[300px] xl:w-[450px]'}/>
-                        <Input style={'primary'} type={'password'} placeholder={'Mot de passe'} size={'large'}
-                               className={'min-w-[300px] xl:w-[450px]'} icon={<Eye className={'fill-slate-500'}/>}/>
+                        <Input type={'password'} placeholder={'Mot de passe'}
+                               className={'min-w-[300px] xl:w-[450px]'} />
                     </div>
                     <div className={'flex xl:flex-row flex-col items-center space-y-2.5 justify-between min-w-[300px] xl:w-[450px] mx-auto mt-4'}>
                         <div className={'flex items-center space-x-2'}>
@@ -47,7 +46,7 @@ export default function HomePage() {
                         <Link href={'/forgot-password'}><span
                             className={'text-primary-medium'}>Mot de passe oublié ?</span></Link>
                     </div>
-                    <Button type={'submit'} style={'secondary'} size={'large'} className={'mx-auto mt-14'}>
+                    <Button type={'submit'} className={'mx-auto mt-14'}>
                         Se connecter
                     </Button>
                 </form>
