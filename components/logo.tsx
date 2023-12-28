@@ -2,10 +2,14 @@
 
 import React, {Component} from 'react';
 
-class Logo extends Component {
+type LogoProps = {
+    className?: string;
+}
+
+class Logo extends Component<LogoProps> {
     render() {
         return (
-            <div className={'flex items-center space-x-2.5'}>
+            <div className={'flex items-center space-x-2.5 ' + this.props.className}>
                 <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
                     <g filter="url(#filter0_f_47_5580)">
                         <ellipse cx="24.3297" cy="22.7843" rx="13.0797" ry="8.5343" fill="#DBD1F0" fillOpacity="0.5"/>
@@ -158,7 +162,7 @@ class Logo extends Component {
                         </radialGradient>
                     </defs>
                 </svg>
-                <p className={'text-base font-bold'}>NasThreads</p>
+                <p className={'font-bold'}>NasThreads</p>
             </div>
         );
     }
