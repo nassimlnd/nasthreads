@@ -5,17 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d7349e-60b6-4899-a4ad-e3f50d277269" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/icons/facebook-icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/icons/google-icon.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/theme-provider.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/checkbox.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/switch.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/images/image_login.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(auth)/login/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/(auth)/register/page.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/auth/[...nextauth]/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/user/auth/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/user/create/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/github-login-button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/auth/google-login-button.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/icons/github-icon.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar-item.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/mode-toggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/dropdown-menu.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/auth.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/db.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/utils/validate-email.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/image_register.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/globals.css" beforeDir="false" afterPath="$PROJECT_DIR$/app/globals.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/layout.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/logo.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
@@ -32,6 +45,9 @@
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
   <component name="ProjectId" id="2a5vbOxU5aJTSCdX2MZaXuJJL09" />
   <component name="ProjectLevelVcsManager">
@@ -53,6 +69,7 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "yarn",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default",
     "ts.external.directory.path": "C:\\Users\\stump\\Documents\\GitHub\\nasthreads\\node_modules\\typescript\\lib",
     "vue.rearranger.settings.migration": "true"
   }
@@ -60,6 +77,13 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\components\main\sidebar" />
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app\api\user\auth" />
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app\api\user\create" />
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app\api\auth\[...nextauth]" />
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\pages\api\auth" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -70,7 +94,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1703621326830</updated>
-      <workItem from="1703621333255" duration="1818000" />
+      <workItem from="1703621333255" duration="35543000" />
     </task>
     <servers />
   </component>

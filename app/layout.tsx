@@ -15,18 +15,14 @@ export const metadata = {
     icons: [{rel: "icon", url: "@/app/favicon.ico"}],
 };
 
-export default function RootLayout({
-                                       children,
-                                   }: {
-    children: React.ReactNode;
-}) {
+export default function RootLayout({children}: { children: React.ReactNode; }) {
     return (
         <html lang="fr">
-            <body className={`font-sans ${lexend.className} dark:bg-neutral-900 bg-white dark:text-white text-black`}>
+            <body className={`${lexend.className} bg-white dark:bg-black dark:text-white text-black`}>
                 <ThemeProvider
                     attribute="class"
-                    defaultTheme="system"
-                    enableSystem
+                    defaultTheme="dark"
+                    enableSyste={false}
                     disableTransitionOnChange
                 >
                     {children}
