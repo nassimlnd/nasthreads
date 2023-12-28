@@ -1,5 +1,5 @@
 import prisma from "@/lib/db";
-import { hashPassword } from "@/app/api/user/create/route";
+import { hashPassword } from "@/lib/utils/hash-password"
 import {NextResponse} from "next/server";
 
 export async function POST(req: Request, res: NextResponse) {

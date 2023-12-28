@@ -3,10 +3,7 @@ import prisma from "@/lib/db";
 import {Prisma} from "@prisma/client";
 import {NextApiRequest, NextApiResponse} from "next";
 import {NextRequest, NextResponse} from "next/server";
-
-export const hashPassword = (string: string) => {
-    return sha256(string).toString();
-}
+import {hashPassword} from "@/lib/utils/hash-password";
 
 export async function POST(req: Request, res: NextResponse) {
     let errors = [];
