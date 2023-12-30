@@ -5,25 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d7349e-60b6-4899-a4ad-e3f50d277269" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/icons/logo.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/calendar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/dialog.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/label.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/popover.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/ui/separator.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/api/auth/register/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ui/select.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/github-login-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/github-login-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/auth/google-login-button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/auth/google-login-button.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/logo-with-text.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/mode-toggle.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/mode-toggle.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ui/button.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ui/button.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(main)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +80,8 @@
       <option name="presentableId" value="Default" />
       <updated>1703621326830</updated>
       <workItem from="1703621333255" duration="38346000" />
-      <workItem from="1703894622745" duration="5456000" />
+      <workItem from="1703894622745" duration="6315000" />
+      <workItem from="1703938004775" duration="13449000" />
     </task>
     <servers />
   </component>

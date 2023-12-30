@@ -1,4 +1,4 @@
-import {NextAuthOptions} from 'next-auth';
+import {getServerSession, NextAuthOptions} from 'next-auth';
 import GithubProvider from 'next-auth/providers/github';
 import GoogleProvider from 'next-auth/providers/google';
 import CredentialsProvider from 'next-auth/providers/credentials';
@@ -6,6 +6,7 @@ import {PrismaAdapter} from "@next-auth/prisma-adapter";
 import bcrypt from 'bcrypt';
 import axios, {AxiosResponse} from 'axios';
 import prisma from "@/lib/db";
+import {hashPassword} from "@/lib/utils/hash-password";
 
 export const authOptions: NextAuthOptions = {
     // Secret for Next-auth, without this JWT encryption/decryption won't work
@@ -14,11 +15,17 @@ export const authOptions: NextAuthOptions = {
 
     // Configure one or more authentication providers
     providers: [
-        /*GithubProvider({
+        GithubProvider({
+            id: 'github',
             clientId: process.env.GITHUB_CLIENT_ID as string,
             clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
+            token: {
+                params: {
+                    redirect_uri: process.env.GITHUB_CALLBACK_URL,
+                }
+            },
         }),
-        GoogleProvider({
+        /*GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID as string,
             clientSecret: process.env.GOOGLE_CLIENT_SECRET as string,
         }),*/
@@ -30,36 +37,45 @@ export const authOptions: NextAuthOptions = {
                 password: {label: "password", type: "password"}
             },
             async authorize(credentials: any, req: any) {
-                const userCredentials = {
-                    email: credentials.email,
-                    password: credentials.password,
-                };
+                console.log(credentials);
 
-                if (!userCredentials.email || !userCredentials.password) {
-                    throw new Error('Missing email or password');
+                // Check if the email and password are valid
+                if (!credentials.email || !credentials.password) {
+                    return null;
+                }
+                console.log("CREDENTIALS CHECKED")
+
+                const user = await prisma.user.findUnique({
+                    where: {
+                        email: credentials.email
+                    }
+                });
+
+                if (!user) {
+                    return null;
+                }
+                console.log("USER CHECKED")
+
+                const valid = bcrypt.compareSync(credentials.password, user.password as string);
+
+                console.log(valid);
+
+                if (!valid) {
+                    return null;
                 }
 
-                const res = await axios.post('http://localhost:3000/api/user/auth', JSON.stringify(userCredentials));
+                console.log("User: ", user);
+                console.log("Valid: ", valid);
 
-                const user = await res.data;
-
-                if (user) {
-                    return user;
-                } else {
-                    throw new Error();
-                }
+                return user;
             }
         }),
     ],
     debug: process.env.NODE_ENV === "development",
-    pages: {
-        signIn: '/auth',
-    },
     session: {
-        strategy: 'jwt'
-    },
-    jwt: {
-        secret: process.env.NEXTAUTH_JWT_SECRET,
-    },
-
+        strategy: 'jwt',
+        maxAge: 30 * 24 * 60 * 60, // 30 days
+    }
 };
+
+export const getServerAuthSession = () => getServerSession(authOptions);

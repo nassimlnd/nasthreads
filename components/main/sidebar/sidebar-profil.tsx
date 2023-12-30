@@ -17,6 +17,7 @@ import {
 import {
     User, Settings, LogOut, Cloud, LifeBuoy, Github
 } from "lucide-react";
+import {signOut} from "next-auth/react";
 
 class SidebarProfil extends Component {
     render() {
@@ -61,7 +62,11 @@ class SidebarProfil extends Component {
                             <span className="text-sm">API</span>
                         </DropdownMenuItem>
                         <DropdownMenuSeparator className={"dark:bg-slate-600"} />
-                        <DropdownMenuItem className={"gap-x-2 px-3 py-2"}>
+                        <DropdownMenuItem className={"gap-x-2 px-3 py-2"}
+                                          onClick={async () => {
+                                              await signOut();
+                                          }}
+                        >
                             <LogOut/>
                             <span className="text-sm">Se déconnecter</span>
                         </DropdownMenuItem>
