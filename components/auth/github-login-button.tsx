@@ -14,7 +14,7 @@ class GithubLoginButton extends Component<Props> {
     render() {
         return (
             <Button
-                onClick={async () => await signIn('github')}
+                onClick={async () => await signIn('github', {callbackUrl: '/'})}
                 type={'button'} variant={'default'}
                 className={cn("w-fit gap-2", this.props.className)}
             >

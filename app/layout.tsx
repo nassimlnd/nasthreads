@@ -18,16 +18,17 @@ export const metadata = {
 export default function RootLayout({children}: { children: React.ReactNode; }) {
     return (
         <html lang="fr">
-            <body className={`${lexend.className} bg-white dark:bg-black dark:text-white text-black`}>
-                <ThemeProvider
-                    attribute="class"
-                    defaultTheme="dark"
-                    enableSystem={false}
-                    disableTransitionOnChange
-                >
-                    {children}
-                </ThemeProvider>
-            </body>
+        <body className={`${lexend.className} bg-white dark:bg-black dark:text-white text-black`}>
+        <ThemeProvider
+            attribute="class"
+            defaultTheme="dark"
+            enableSystem={false}
+            disableTransitionOnChange
+        >
+
+            {children}
+        </ThemeProvider>
+        </body>
         </html>
     );
 }

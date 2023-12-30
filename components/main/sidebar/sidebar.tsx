@@ -5,7 +5,12 @@ import {Bell, Home, List, MessageCircle, TrendingUp, User} from "lucide-react";
 import {ModeToggle} from "@/components/mode-toggle";
 import LogoWithText from "@/components/logo-with-text";
 
-const Sidebar = () => {
+interface Props {
+    children?: React.ReactNode,
+    user: any
+}
+
+const Sidebar = ({children, user } : Props) => {
 
     return (
         <div className="flex flex-col justify-between px-2.5 py-6 w-[300px] border-gray-100 dark:border-gray-900 border-r">
@@ -23,7 +28,7 @@ const Sidebar = () => {
                 <div className={"px-2.5"}>
                     <ModeToggle />
                 </div>
-                <SidebarProfil />
+                <SidebarProfil user={user}/>
             </div>
         </div>
     )

@@ -34,8 +34,9 @@ const LoginModal = () => {
             {
                 email,
                 password,
-                redirect: false
-            })
+                redirect: false,
+                callbackUrl: '/'
+            });
         router.push("/");
     }
 

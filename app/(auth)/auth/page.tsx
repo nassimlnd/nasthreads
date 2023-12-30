@@ -5,8 +5,17 @@ import {Button} from "@/components/ui/button";
 import React from "react";
 import LoginModal from "@/components/main/modals/login-modal";
 import RegisterModal from "@/components/main/modals/register-modal";
+import {getServerSession} from "next-auth";
+import {authOptions} from "@/lib/auth";
+import {redirect} from "next/navigation";
 
-const LoginPage = () => {
+const LoginPage = async () => {
+    const session = await getServerSession(authOptions);
+
+    if (session) {
+        redirect("/");
+    }
+
     return (
         <div className={"lg:flex h-full py-8 px-8 space-y-12 lg:space-y-0"}>
             <div className={"w-1/2 lg:flex flex-col justify-center items-center space-y-6"}>
@@ -180,13 +189,14 @@ const LoginPage = () => {
                     <Separator orientation={"horizontal"} className={"w-[130px]"}/>
                 </div>
                 <div className={"space-y-1.5"}>
-                    <RegisterModal />
-                    <p className={"text-slate-500 text-xs w-[300px]"}>En vous inscrivant, vous acceptez les Conditions d'utilisation et la Politique de confidentialité,
+                    <RegisterModal/>
+                    <p className={"text-slate-500 text-xs w-[300px]"}>En vous inscrivant, vous acceptez les Conditions
+                        d'utilisation et la Politique de confidentialité,
                         notamment l'Utilisation des cookies.</p>
                 </div>
                 <div className={"space-y-3"}>
                     <h4 className={"scroll-m-20 text-xl font-semibold tracking-tight"}>Vous avez déjà un compte ?</h4>
-                    <LoginModal />
+                    <LoginModal/>
                 </div>
             </div>
         </div>

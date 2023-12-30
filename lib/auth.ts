@@ -19,11 +19,6 @@ export const authOptions: NextAuthOptions = {
             id: 'github',
             clientId: process.env.GITHUB_CLIENT_ID as string,
             clientSecret: process.env.GITHUB_CLIENT_SECRET as string,
-            token: {
-                params: {
-                    redirect_uri: process.env.GITHUB_CALLBACK_URL,
-                }
-            },
         }),
         /*GoogleProvider({
             clientId: process.env.GOOGLE_CLIENT_ID as string,

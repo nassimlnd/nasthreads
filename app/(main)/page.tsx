@@ -4,18 +4,17 @@ import {getServerSession} from "next-auth";
 import {authOptions} from "@/lib/auth";
 
 export default async function HomePage() {
-    let user = await getServerSession(authOptions);
-    if (!user) {
+    let session = await getServerSession(authOptions);
+    if (!session) {
         redirect('/auth');
     }
+
+    const user = await session.user;
 
     return (
         <main
             className="flex h-full w-3/4 mx-auto">
-            <Sidebar/>
-            <pre>
-                {JSON.stringify(user, null, 2)}
-            </pre>
+            <Sidebar user={user}/>
         </main>
     );
 }
