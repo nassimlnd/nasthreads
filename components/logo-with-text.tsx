@@ -6,7 +6,7 @@ type LogoProps = {
     className?: string;
 }
 
-class Logo extends Component<LogoProps> {
+class LogoWithText extends Component<LogoProps> {
     render() {
         return (
             <div className={'flex items-center space-x-2.5 ' + this.props.className}>
@@ -168,4 +168,4 @@ class Logo extends Component<LogoProps> {
     }
 }
 
-export default Logo;
+export default LogoWithText;
