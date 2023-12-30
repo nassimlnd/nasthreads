@@ -38,7 +38,7 @@ const SidebarProfil = async ({children, user}: Props) => {
                             {user.name.split(" ").map((name: string) => name[0].toUpperCase())}
                         </div>}
                         {user.image && <Image src={user.image} alt={"Profile picture"} width={48} height={40}/>}
-                        <div className={"flex flex-col justify-center items-start"}>
+                        <div className={"hidden lg:flex flex-col justify-center items-start"}>
                             <p>{user.name || "NO NAME"}</p>
                             <p className={"text-slate-500"}>@nassimlounadi</p>
                         </div>
