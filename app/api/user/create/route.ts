@@ -1,17 +1,16 @@
-import { SHA256 as sha256 } from "crypto-js";
 import prisma from "@/lib/db";
 import {Prisma} from "@prisma/client";
-import {NextApiRequest, NextApiResponse} from "next";
 import {NextRequest, NextResponse} from "next/server";
 import {hashPassword} from "@/lib/utils/hash-password";
+import bcrypt from "bcrypt";
 
 export async function POST(req: Request, res: NextResponse) {
     let errors = [];
     const {
         name,
-        username,
         email,
-        password
+        password,
+        birthDate,
     } = await req.json();
 
     if (password.length < 8) {
@@ -19,13 +18,15 @@ export async function POST(req: Request, res: NextResponse) {
         return NextResponse.json({message: errors}, {status: 400});
     }
 
+    const hashedPassword = await bcrypt.hash(password, 10);
+
     try {
         const user = await prisma.user.create({
             data: {
                 name: name,
-                username: username,
                 email: email,
-                password: hashPassword(password)
+                password: hashedPassword,
+                birthDate: new Date(birthDate),
             }
         }).catch(console.error);
 
