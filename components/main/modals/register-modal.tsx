@@ -43,7 +43,7 @@ class RegisterModal extends Component {
                             Étape 1/5
                         </h4>
                     </DialogHeader>
-                    <div className={"flex flex-col items-center space-y-8 pb-8 pt-4 px-16"}>
+                    <div className={"flex flex-col items-center space-y-8 pb-8 pt-4 lg:px-16"}>
                         <h3 className={"scroll-m-20 text-2xl font-semibold tracking-tight"}>Créer votre compte</h3>
                         <form className={"w-full"}>
                             <div className={"space-y-3"}>
