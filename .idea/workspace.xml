@@ -5,11 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d7349e-60b6-4899-a4ad-e3f50d277269" name="Changes" comment="fix(api): create user route difference with db">
-      <change afterPath="$PROJECT_DIR$/app/(main)/layout.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/components/main/post/create-post.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/assets/images/logo.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/(main)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/post/post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(main)/layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/icons/logo.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/icons/logo.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/logo-with-text.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/logo-with-text.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/post/create-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/post/create-post.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +44,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/stump/Documents/GitHub/nasthreads/app",
+    "last_opened_file_path": "C:/Users/stump/Documents/GitHub/nasthreads/public/assets/images",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -56,6 +57,7 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\public\assets\images" />
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -77,7 +79,7 @@
       <workItem from="1703621333255" duration="38346000" />
       <workItem from="1703894622745" duration="6315000" />
       <workItem from="1703938004775" duration="14301000" />
-      <workItem from="1703972745906" duration="11302000" />
+      <workItem from="1703972745906" duration="12254000" />
     </task>
     <task id="LOCAL-00001" summary="fix(api): create user route difference with db">
       <option name="closed" value="true" />

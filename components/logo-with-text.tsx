@@ -4,6 +4,8 @@ import React, {Component} from 'react';
 
 type LogoProps = {
     className?: string;
+    width?: number;
+    height?: number;
 }
 
 class LogoWithText extends Component<LogoProps> {

@@ -2,13 +2,15 @@ import React, {Component} from 'react';
 import {cn} from "@/lib/utils";
 
 type Props = {
-    className?: string
+    className?: string,
+    width?: number,
+    height?: number
 }
 
 class Logo extends Component<Props> {
     render() {
         return (
-            <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none"
+            <svg xmlns="http://www.w3.org/2000/svg" width={this.props.width} height={this.props.height} viewBox="0 0 48 48" fill="none"
                  className={cn(this.props.className)}
             >
                 <g filter="url(#filter0_f_47_5580)">

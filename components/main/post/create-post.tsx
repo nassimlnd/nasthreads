@@ -5,8 +5,8 @@ import {BarChart3, CalendarClock, ImageIcon, Smile} from "lucide-react";
 
 function CreatePost() {
     return (
-        <div className={"flex px-4 py-4 border-b border-gray-100 dark:border-gray-900 w-full lg:w-[600px]"}>
-            <div className={"w-fit"}>
+        <div className={"flex px-4 pb-4 lg:py-4 border-b border-gray-100 dark:border-gray-900 w-full lg:w-[600px]"}>
+            <div className={"w-fit pt-2 lg:pt-0"}>
                 <div className={"h-[32px] w-[32px] text-sm lg:text-base lg:h-[48px] lg:w-[48px] bg-green-500 rounded-full flex items-center justify-center"}>
                     NL
                 </div>
