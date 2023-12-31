@@ -9,9 +9,9 @@ import ShareButton from "@/components/main/post/share-button";
 const Post = () => {
     return (
         <div>
-            <div className={"flex px-4 py-4 space-x-4 border-b border-gray-100 dark:border-gray-900 w-[600px]"}>
+            <div className={"flex px-4 py-4 space-x-4 border-b border-gray-100 dark:border-gray-900 w-full lg:w-[600px]"}>
                 <div className={"w-fit"}>
-                    <div className={"h-[48px] w-[48px] rounded-full bg-red-500 flex items-center justify-center"}>
+                    <div className={"h-[32px] w-[32px] text-sm lg:text-base lg:h-[48px] lg:w-[48px] rounded-full bg-red-500 flex items-center justify-center"}>
                         NL
                     </div>
                 </div>
