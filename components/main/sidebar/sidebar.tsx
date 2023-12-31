@@ -47,7 +47,7 @@ const Sidebar = ({children, user}: Props) => {
 
             <div
                 className={"min-[500px]:hidden fixed top-0 left-0 w-full h-[96px] border-b border-gray-100 dark:border-gray-900 bg-white dark:bg-black"}>
-                <div className={"flex justify-between items-center px-4 py-3"}>
+                <div className={"flex justify-between items-center px-2 py-3"}>
                     <div>
                         <SidebarProfil user={user}/>
                     </div>
@@ -60,16 +60,16 @@ const Sidebar = ({children, user}: Props) => {
             <div
                 className={"min-[500px]:hidden fixed bottom-0 left-0 h-[70px] bg-white dark:bg-black border-t border-gray-100 dark:border-gray-900 z-20 w-full flex justify-between items-center px-6 pb-2"}>
                 <Link href={"/"} className={"p-2"}>
-                    <Home size={28}/>
+                    <Home size={24}/>
                 </Link>
                 <Link href={"/"} className={"p-2"}>
-                    <Search size={28}/>
+                    <Search size={24}/>
                 </Link>
                 <Link href={"/"} className={"p-2"}>
-                    <Bell size={28}/>
+                    <Bell size={24}/>
                 </Link>
                 <Link href={"/"} className={"p-2"}>
-                    <Mail size={28}/>
+                    <Mail size={24}/>
                 </Link>
             </div>
         </>
