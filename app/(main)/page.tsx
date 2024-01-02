@@ -18,7 +18,7 @@ export default async function HomePage() {
             className="flex h-full lg:w-3/4 mx-auto">
             <Sidebar user={user}/>
             <div
-                className={"h-fit w-full ml-16 lg:ml-[300px] lg:w-1/2 border-r border-gray-100 dark:border-gray-900 max-[499px]:pt-28 max-[500px]:pb-[96px]"}>
+                className={"h-fit w-full ml-16 max-[499px]:ml-0 lg:ml-[300px] lg:w-1/2 border-r border-gray-100 dark:border-gray-900 max-[499px]:pt-24 max-[500px]:pb-[96px]"}>
                 <div
                     className={"flex space-x-2.5 items-center justify-center border-b border-gray-100 dark:border-gray-900"}>
                     <div
