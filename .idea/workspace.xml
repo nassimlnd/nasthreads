@@ -5,19 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d7349e-60b6-4899-a4ad-e3f50d277269" name="Changes" comment="fix(api): create user route difference with db">
-      <change afterPath="$PROJECT_DIR$/app/api/post/route.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/post.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/types/next-auth.d.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/main/post/post-feed.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/(main)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/page.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/post/create-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/post/create-post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/post/post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/post/post.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/post.ts" beforeDir="false" afterPath="$PROJECT_DIR$/services/post.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +79,7 @@
       <workItem from="1703972745906" duration="12634000" />
       <workItem from="1704036581979" duration="1831000" />
       <workItem from="1704123535325" duration="2685000" />
-      <workItem from="1704152252225" duration="6713000" />
+      <workItem from="1704152252225" duration="8231000" />
     </task>
     <task id="LOCAL-00001" summary="fix(api): create user route difference with db">
       <option name="closed" value="true" />

@@ -1,26 +1,9 @@
 import Sidebar from "@/components/main/sidebar/sidebar";
-import {redirect} from "next/navigation";
+import {redirect, usePathname} from "next/navigation";
 import {getServerSession} from "next-auth";
 import {authOptions, getServerAuthSession} from "@/lib/auth";
-import Post from "@/components/main/post/post";
 import {CreatePost, CreatePostModal} from "@/components/main/post/create-post";
-import {getPosts} from "@/services/post";
-
-async function getData() {
-    const res = await fetch("http://localhost:3000/api/post");
-
-    if (!res.ok) {
-        throw new Error(res.statusText);
-    }
-
-    const posts = await res.json();
-
-    if (posts.posts.length === 0) {
-        return null;
-    }
-
-    return posts.posts;
-}
+import PostFeed from "@/components/main/post/post-feed";
 
 export default async function HomePage() {
     let session = await getServerSession(authOptions);
@@ -29,7 +12,6 @@ export default async function HomePage() {
     }
 
     const user = await session.user;
-    const posts = await getData();
 
     return (
         <main
@@ -52,19 +34,7 @@ export default async function HomePage() {
                 </div>
                 <CreatePost user={user}/>
                 <CreatePostModal/>
-                {/*<Post user={user} createdAt={"2024-01-02T00:07:20.715Z"} content={"Content test"}/>*/}
-                {
-                    posts && posts
-                        .sort((a: any, b: any) => new Date(b.createdAt).getTime() - new Date(a.createdAt).getTime())
-                        .map((post: any) => (
-                            <Post
-                                key={post.id}
-                                user={post.user}
-                                createdAt={post.createdAt}
-                                content={post.content}
-                            />
-                        ))
-                }
+                <PostFeed />
             </div>
         </main>
     );
