@@ -50,7 +50,7 @@ const RegisterModal = () => {
             const res = await axios.post('/api/auth/register', {
                 name: name,
                 email: email,
-                password: 123456,
+                password: 1234<56,
                 birthDate: birthYear + "-" + birthMonth + "-" + birthDay
             }).then((res) => res).catch((err) => err.response);
 

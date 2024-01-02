@@ -5,8 +5,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d5d7349e-60b6-4899-a4ad-e3f50d277269" name="Changes" comment="fix(api): create user route difference with db">
+      <change afterPath="$PROJECT_DIR$/app/api/post/route.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/post.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/types/next-auth.d.ts" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/(main)/page.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/app/(main)/page.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/modals/login-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/modals/register-modal.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/post/create-post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/post/create-post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/post/post.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/post/post.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar-profil.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/main/sidebar/sidebar.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/auth.ts" beforeDir="false" afterPath="$PROJECT_DIR$/lib/auth.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/prisma/schema.prisma" beforeDir="false" afterPath="$PROJECT_DIR$/prisma/schema.prisma" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,31 +44,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "dev",
-    "last_opened_file_path": "C:/Users/stump/Documents/GitHub/nasthreads/public/assets/images",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "yarn",
-    "settings.editor.selected.configurable": "editing.templates",
-    "ts.external.directory.path": "C:\\Users\\stump\\Documents\\GitHub\\nasthreads\\node_modules\\typescript\\lib",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;dev&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/stump/Documents/GitHub/nasthreads/public/assets/images&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;yarn&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editing.templates&quot;,
+    &quot;ts.external.directory.path&quot;: &quot;C:\\Users\\stump\\Documents\\GitHub\\nasthreads\\node_modules\\typescript\\lib&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\public\assets\images" />
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\components\main\post" />
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\lib" />
+      <recent name="C:\Users\stump\Documents\GitHub\nasthreads\components\main\post" />
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app\(main)" />
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\components\main\sidebar" />
       <recent name="C:\Users\stump\Documents\GitHub\nasthreads\app\api\user\auth" />
@@ -74,7 +85,10 @@
       <workItem from="1703621333255" duration="38346000" />
       <workItem from="1703894622745" duration="6315000" />
       <workItem from="1703938004775" duration="14301000" />
-      <workItem from="1703972745906" duration="12398000" />
+      <workItem from="1703972745906" duration="12634000" />
+      <workItem from="1704036581979" duration="1831000" />
+      <workItem from="1704123535325" duration="2685000" />
+      <workItem from="1704152252225" duration="6713000" />
     </task>
     <task id="LOCAL-00001" summary="fix(api): create user route difference with db">
       <option name="closed" value="true" />

@@ -21,7 +21,7 @@ const Sidebar = ({children, user}: Props) => {
     return (
         <>
             <div
-                className="hidden min-[500px]:flex flex-col justify-between px-1 lg:px-2.5 py-4 lg:py-6 lg:min-w-[300px] border-gray-100 dark:border-gray-900 border-r">
+                className="hidden min-[500px]:flex fixed bg-white dark:bg-black h-full flex-col justify-between px-1 lg:px-2.5 py-4 lg:py-6 lg:min-w-[300px] border-gray-100 dark:border-gray-900 border-r">
                 <div>
                     <LogoWithText className={"gap-3 px-4"}/>
                     <div className="pt-2 lg:pt-6 space-y-1 flex flex-col items-center">
@@ -47,7 +47,7 @@ const Sidebar = ({children, user}: Props) => {
 
             <div
                 className={"min-[500px]:hidden fixed top-0 left-0 w-full h-[96px] border-b border-gray-100 dark:border-gray-900 bg-white dark:bg-black"}>
-                <div className={"flex justify-between items-center px-2 py-3"}>
+                <div className={"flex justify-between items-center px-2 pr-4 py-3"}>
                     <div>
                         <SidebarProfil user={user}/>
                     </div>

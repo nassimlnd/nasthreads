@@ -70,6 +70,21 @@ export const authOptions: NextAuthOptions = {
     session: {
         strategy: 'jwt',
         maxAge: 30 * 24 * 60 * 60, // 30 days
+    },
+    callbacks: {
+        session: async ({session, token}) => {
+            if (session?.user) {
+                // @ts-ignore
+                session.user.id = token.uid;
+            }
+            return session;
+        },
+        jwt: async ({user, token}) => {
+            if (user) {
+                token.uid = user.id;
+            }
+            return token;
+        }
     }
 };
 

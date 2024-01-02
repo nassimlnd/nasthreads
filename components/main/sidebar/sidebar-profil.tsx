@@ -15,9 +15,6 @@ import {
 import {
     User, Settings, LogOut, Cloud, LifeBuoy, Github
 } from "lucide-react";
-import {signOut, useSession} from "next-auth/react";
-import {useRouter} from "next/navigation";
-import {getServerAuthSession} from "@/lib/auth";
 import Image from "next/image";
 import LogoutButton from "@/components/auth/logout-button";
 
@@ -37,7 +34,7 @@ const SidebarProfil = async ({children, user}: Props) => {
                             className={"h-[40px] w-[40px] rounded-full bg-black text-white border border-gray-500 flex items-center justify-center text-sm"}>
                             {user.name.split(" ").map((name: string) => name[0].toUpperCase())}
                         </div>}
-                        {user.image && <Image src={user.image} alt={"Profile picture"} width={48} height={40}/>}
+                        {user.image && <Image src={user.image} alt={"Profile picture"} width={40} height={40}/>}
                         <div className={"hidden lg:flex flex-col justify-center items-start"}>
                             <p>{user.name || "NO NAME"}</p>
                             <p className={"text-slate-500"}>@nassimlounadi</p>

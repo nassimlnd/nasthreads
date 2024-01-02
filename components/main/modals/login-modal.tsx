@@ -71,7 +71,7 @@ const LoginModal = () => {
                                   onSubmit={handleSubmit}
                             >
                                 <div className={"space-y-2.5"}>
-                                    <Input type={"text"} placeholder={"Adresse e-mail"}
+                                    <Input type={"email"} placeholder={"Adresse e-mail"}
                                            className={"bg-white dark:bg-black"}
                                            onChange={(e) => {
                                                setEmail(e.target.value);
@@ -95,8 +95,9 @@ const LoginModal = () => {
                                     </Button>
                                 </div>
                             </form>
-                            <p className={"text-sm mt-3"}>Vous n'avez pas de compte ? <Link href={"#"}
-                                                                                            className={"text-indigo-500"}>Inscrivez-vous</Link>
+                            <p className={"text-sm mt-3"}>Vous n'avez pas de compte ?
+                                <Link href={"#"}
+                                      className={"text-indigo-500"}>Inscrivez-vous</Link>
                             </p>
                         </div>
                     </div>
